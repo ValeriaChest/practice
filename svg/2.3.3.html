@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+    </head>
+<body>
+    <svg 
+    width="600px" height="600px" viewBox="0 0 270 270" 
+    onload="setClock()">
+    <script>
+    
+    
+    
+    </script>
+    <g transform="translate(150,150)">
+    
+     <g>
+     <circle r="108" fill="none" stroke-width="4" stroke="gray" />
+     
+     </g>
+     
+     <g id="hands" transform="rotate(180)">
+     <g id="hour">
+     <line stroke-width="5" y2="75" stroke-linecap="round" stroke="gray" opacity=".5" />
+     <animateTransform attributeName="transform" type="rotate"
+     repeatCount="indefinite" dur="12h" by="360" />
+     <circle r="7" />
+     </g>
+     <g id="minute">
+     <line stroke-width="4" y2="93" stroke-linecap="round" stroke="gray" opacity=".9" />
+     <animateTransform attributeName="transform" type="rotate"
+     repeatCount="indefinite" dur="60min" by="360" />
+     <circle r="6" fill="gray"/>
+     </g>
+     <g id="second">
+     <line stroke-width="2" y1="-20" y2="102" stroke-linecap="round" stroke="gray" />
+     <animateTransform attributeName="transform" type="rotate"
+     repeatCount="indefinite" dur="60s" by="360" />
+     <circle r="4" fill="gray"/>
+     </g>
+     </g>
+    </g>
+    </svg>
+
+
+
+</body>
+
+    </html>
